@@ -26,6 +26,6 @@ class MyApp extends StatelessWidget {
         },
         title: 'munchCrunch',
         // home: const ExpandablePage());
-        home: const MyPage());
+        home: MyPage());
   }
 }

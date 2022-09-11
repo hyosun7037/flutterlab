@@ -48,7 +48,7 @@ class Product {
   String apiFeaturedImage;
   List<ProductColor> productColors;
 
-  var like = false.obs;
+  var like = false.obs; // 좋아요 버튼 클릭 토글
 
   factory Product.fromJson(Map<String, dynamic> json) => Product(
         brand: brandValues.map[json["brand"]],
