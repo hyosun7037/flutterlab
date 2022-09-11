@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlab/crud/view/mypage.dart';
 import 'package:flutterlab/expandable/expandable_page.dart';
 import 'package:get/route_manager.dart';
 
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
           return MediaQuery(data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0), child: widget ?? Container());
         },
         title: 'munchCrunch',
-        home: const ExpandablePage());
+        // home: const ExpandablePage());
+        home: const MyPage());
   }
 }
