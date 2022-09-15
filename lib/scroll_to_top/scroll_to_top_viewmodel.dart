@@ -7,15 +7,14 @@ class ScrollToTopViewmodel extends GetxController with GetSingleTickerProviderSt
 
   @override
   void onInit() {
-    scrollController.addListener(() {});
     super.onInit();
+    scrollController.addListener(() {});
   }
 
   // 스크롤 최상단 이동
-  void scrollToTop(ScrollController? primaryController) async {
-    if (scrollController.position.pixels > 0.0) {
-      // scrollController.animateTo(-100, duration: const Duration(seconds: 3), curve: Curves.linear);
-      primaryController?.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.linear);
+  Future scrollToTop(position, ScrollController? primaryController) async {
+    if (primaryController!.position.pixels > 0) {
+      primaryController.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.linear);
       update();
     }
   }

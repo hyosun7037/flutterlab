@@ -5,7 +5,7 @@ import 'package:flutterlab/scroll_to_top/scroll_to_top_viewmodel.dart';
 import 'package:get/get.dart';
 
 class ScrollToTop extends StatelessWidget {
-  const ScrollToTop({Key? key}) : super(key: key);
+  ScrollToTop({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class ScrollToTop extends StatelessWidget {
     var primaryController = PrimaryScrollController.of(context);
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () => scrollToTopViewmodel.scrollToTop(primaryController),
+        onPressed: () => scrollToTopViewmodel.scrollToTop(scrollToTopViewmodel.scrollController.position.pixels, primaryController),
         child: Icon(Icons.keyboard_arrow_up),
       ),
       body: SingleChildScrollView(

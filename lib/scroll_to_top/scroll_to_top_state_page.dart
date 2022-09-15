@@ -25,7 +25,7 @@ class _ScrollToTopStatePage extends State<ScrollToTopStatePage> with TickerProvi
 
   // 스크롤 최상단 이동 버튼을 눌렀을 때, 리스트의 최상단으로 이동하는 코드
   void _scrollToTop() {
-    _scrollController.animateTo(0.0, duration: const Duration(seconds: 1), curve: Curves.linear);
+    _scrollController.animateTo(0.0, duration: const Duration(milliseconds: 1), curve: Curves.linear);
   }
 
   @override
