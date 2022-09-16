@@ -12,7 +12,7 @@ class ScrollToTopViewmodel extends GetxController with GetSingleTickerProviderSt
   }
 
   // 스크롤 최상단 이동
-  Future scrollToTop(position, ScrollController? primaryController) async {
+  Future scrollToTop(ScrollController? primaryController) async {
     if (primaryController!.position.pixels > 0) {
       primaryController.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.linear);
       update();

@@ -14,7 +14,7 @@ class ScrollToTop extends StatelessWidget {
     var primaryController = PrimaryScrollController.of(context);
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () => scrollToTopViewmodel.scrollToTop(scrollToTopViewmodel.scrollController.position.pixels, primaryController),
+        onPressed: () => scrollToTopViewmodel.scrollToTop(primaryController),
         child: Icon(Icons.keyboard_arrow_up),
       ),
       body: SingleChildScrollView(

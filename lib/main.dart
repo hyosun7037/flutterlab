@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterlab/crud/view/mypage.dart';
+import 'package:flutterlab/dynamic_tab/dynamic_tab_page.dart';
 import 'package:flutterlab/expandable/expandable_page.dart';
 import 'package:flutterlab/scroll_to_top/scroll_to_top_page.dart';
 import 'package:flutterlab/scroll_to_top/scroll_to_top_state_page.dart';
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
                 TestButton(title: 'CRUD', page: MyPage()),
                 TestButton(title: 'Expandable', page: ExpandablePage()),
                 TestButton(title: 'ScrollToTop', page: ScrollToTop()),
+                TestButton(title: 'DynamicTab', page: DynamicTabPage()),
               ],
             ),
           ),
