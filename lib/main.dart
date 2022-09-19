@@ -4,6 +4,7 @@ import 'package:flutterlab/dynamic_tab/dynamic_tab_page.dart';
 import 'package:flutterlab/expandable/expandable_page.dart';
 import 'package:flutterlab/scroll_to_top/scroll_to_top_page.dart';
 import 'package:flutterlab/scroll_to_top/scroll_to_top_state_page.dart';
+import 'package:flutterlab/todolist_flutter/lib/todo_list_screen.dart';
 import 'package:get/route_manager.dart';
 
 // 앱에서 지원하는 언어 리스트 변수
@@ -40,6 +41,7 @@ class MyApp extends StatelessWidget {
                 TestButton(title: 'Expandable', page: ExpandablePage()),
                 TestButton(title: 'ScrollToTop', page: ScrollToTop()),
                 TestButton(title: 'DynamicTab', page: DynamicTabPage()),
+                TestButton(title: 'TodoList', page: TodoListScreen()),
               ],
             ),
           ),
